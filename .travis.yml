@@ -5,4 +5,17 @@ language: bash
 sudo: required
 
 script: 
-- pwd
+- sudo apt-get update && upgrade
+- sudo apt-get install build-essential make nano libssl-dev
+- wget http://mirrors.kernel.org/ubuntu/pool/main/i/isl/libisl15_0.16.1-1_amd64.deb
+- sudo dpkg -i libisl15_0.16.1-1_amd64.deb
+- git clone https://github.com/crazyuploader/AnyKernel3.git
+- git clone --depth=1 --branch tulip-p-oss https://github.com/MiCode/Xiaomi_Kernel_OpenSource.git kernel
+- git clone https://github.com/crazyuploader/arm-eabi-4.8.git
+- git clone https://github.com/crazyuploader/aarch64-buildroot-linux-musl.git
+- cd kernel
+- wget https://raw.githubusercontent.com/crazyuploader/testtt/master/script.sh
+- bash script.sh
+- cd ..
+- cd AnyKernel3
+- ls -s
