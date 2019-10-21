@@ -13,6 +13,7 @@ script:
 - git clone https://github.com/crazyuploader/AnyKernel3.git
 - git clone --depth=1 --branch tulip-p-oss https://github.com/MiCode/Xiaomi_Kernel_OpenSource.git kernel
 - git clone https://github.com/crazyuploader/arm-eabi-4.8.git
+- git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
 - git clone https://github.com/crazyuploader/aarch64-buildroot-linux-musl.git
 - cd kernel
 - wget https://raw.githubusercontent.com/crazyuploader/testtt/master/script.sh
