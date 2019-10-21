@@ -7,7 +7,7 @@ ZIP_NAME="perf"
 export KBUILD_BUILD_USER="jungle"
 export KBUILD_BUILD_HOST="ryzen"
 
-export CROSS_COMPILE=/home/travis/build/crazyuploader/testtt/aarch64-buildroot-linux-musl/bin/aarch64-buildroot-linux-musl-
+export CROSS_COMPILE=/home/travis/build/crazyuploader/testtt/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export CROSS_COMPILE_ARM32=/home/travis/build/crazyuploader/testtt/arm-eabi-4.8/bin/arm-eabi-
 
 export ARCH=arm64
