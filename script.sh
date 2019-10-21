@@ -1,6 +1,6 @@
 #!/bin/sh
 # export KERNELDIR=`readlink -f .`
-DEFCONFIG=
+DEFCONFIG=whyred-perf_defconfig
 ANYKERNEL_DIR=/home/travis/build/crazyuploader/testtt/AnyKernel3
 ZIP_NAME="perf"
 
