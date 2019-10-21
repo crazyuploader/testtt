@@ -1,0 +1,8 @@
+distro: xenial
+
+language: bash
+
+sudo: required
+
+script: 
+- pwd
