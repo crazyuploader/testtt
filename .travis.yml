@@ -1,3 +1,5 @@
+distro: bionic
+
 language: bash
 
 sudo: required
