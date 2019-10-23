@@ -11,15 +11,13 @@ script:
 - sudo snap install ffsend
 - wget http://mirrors.kernel.org/ubuntu/pool/main/i/isl/libisl15_0.16.1-1_amd64.deb
 - sudo dpkg -i libisl15_0.16.1-1_amd64.deb
-- git clone https://github.com/crazyuploader/AnyKernel3.git
 - git clone --depth=1 --branch testing https://github.com/crazyuploader/kernel.git kernel
-- git clone https://github.com/crazyuploader/arm-eabi-4.8.git
-- git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
-- git clone https://github.com/crazyuploader/aarch64-buildroot-linux-musl.git
 - cd kernel
+- git clone https://github.com/crazyuploader/AnyKernel3.git
+- git clone https://github.com/crazyuploader/arm-eabi-4.8.git
+- git clone https://github.com/crazyuploader/aarch64-buildroot-linux-musl.git
 - wget https://raw.githubusercontent.com/crazyuploader/testtt/master/script.sh
 - bash script.sh
-- cd ..
 - cd AnyKernel3
 - ls -s
 - ffsend upload perf.zip
