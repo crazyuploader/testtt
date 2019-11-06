@@ -20,4 +20,3 @@ script:
 - bash script.sh
 - cd AnyKernel3
 - ls -s
-- ffsend upload perf.zip
