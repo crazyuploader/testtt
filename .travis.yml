@@ -6,7 +6,6 @@ sudo: required
 
 script: 
 - sudo apt-get update
-- sudo apt-get upgrade
 - sudo apt-get install build-essential make nano libssl-dev snap
 - sudo snap install ffsend
 - wget http://mirrors.kernel.org/ubuntu/pool/main/i/isl/libisl15_0.16.1-1_amd64.deb
