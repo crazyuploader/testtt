@@ -1,6 +1,6 @@
 #!/bin/sh
 # export KERNELDIR=`readlink -f .`
-DEFCONFIG=whyred-perf_defconfig
+DEFCONFIG=kangaroox-whyred_defconfig
 ANYKERNEL_DIR=/AnyKernel3
 ZIP_NAME="perf"
 
