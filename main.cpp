@@ -34,6 +34,6 @@ int main()
     //Freeing memory using 'delete' operator
     delete ptr;
     delete array;
-    cout<< "\n\nCreated by Jugal Kishore -- 2019 ;p\n";
+    coutn\nCreated by Jugal Kishore -- 2019 ;p\n";
     return 0;
 }
