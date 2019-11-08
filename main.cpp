@@ -2,7 +2,6 @@
 //new and delete operator.
 #include<iostream>
 using namespace std;
-
 int main()
 {
     //Initialization of pointer ptr to NULL
@@ -34,6 +33,7 @@ int main()
     //Freeing memory using 'delete' operator
     delete ptr;
     delete array;
-    coutn\nCreated by Jugal Kishore -- 2019 ;p\n";
+    cout<< "\n\nCreated by Jugal Kishore -- 2019\n";
+    cout<< "\n\nCreated by Jugal Kishore -- 2019 ;p\n";
     return 0;
 }
