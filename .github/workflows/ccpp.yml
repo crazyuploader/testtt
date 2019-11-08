@@ -9,5 +9,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: checking software
-      run: whereis clang && whereis gcc && whereis git
+    - name: downloading script
+      run: wget https://raw.githubusercontent.com/crazyuploader/build-scripts/master/cpp.sh
+    - name: building
+      run: bash cpp.sh
