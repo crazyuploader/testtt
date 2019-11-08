@@ -9,5 +9,5 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: compiling
-      run: for f in $(ls *.cpp); do echo "Compiling $f"; g++ $f; done
+    - name: checking software
+      run: whereis clang && whereis gcc && whereis git
