@@ -5,7 +5,6 @@ language: bash
 sudo: required
 
 script: 
-- sudo apt update && sudo apt install python3
 - git clone https://gitHub.com/crazyuploader/Python.git python
 - sudo pip install --upgrade pip
 - sudo pip install pyflakes
