@@ -6,6 +6,5 @@ sudo: required
 
 script: 
 - git clone https://gitHub.com/crazyuploader/Python.git python
-- sudo pip install --upgrade pip
 - sudo pip install pyflakes
 - cd python && for f in $(ls *.py); do echo "Checking $f"; echo; pyflakes $f; done
