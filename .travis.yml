@@ -5,17 +5,8 @@ language: bash
 sudo: required
 
 script: 
-- sudo apt-get update
-- sudo apt-get install build-essential make nano libssl-dev snap
-- sudo snap install ffsend
-- wget http://mirrors.kernel.org/ubuntu/pool/main/i/isl/libisl15_0.16.1-1_amd64.deb
-- sudo dpkg -i libisl15_0.16.1-1_amd64.deb
-- git clone --depth=1 --branch testing https://github.com/crazyuploader/kernel.git kernel
-- git clone https://github.com/crazyuploader/AnyKernel3.git
-- git clone https://github.com/crazyuploader/arm-eabi-4.8.git
-- git clone https://github.com/crazyuploader/aarch64-buildroot-linux-musl.git
-- cd kernel
-- wget https://raw.githubusercontent.com/crazyuploader/testtt/master/script.sh
-- bash script.sh
-- cd AnyKernel3
-- ls -s
+- sudo apt update && sudo apt -y upgrade && sudo apt install python 
+- git clone https://GitHub.com/crazy uploaded/Python.git python
+- pip install --upgrade pip
+- pip install pyflakes
+- cd python && for f in $(ls *.py); do echo "Checking $f"; echo; pyflakes $f; done
