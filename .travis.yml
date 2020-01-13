@@ -1,15 +1,9 @@
+os: linux
 dist: bionic
-language: python
-python:
-  - "2.7"
-  - "3.4"
-  - "3.5"
-  - "3.6"
-  - "3.7"
-  - "3.8"
+language: bash
 install:
-  - pip install pyflakes
+  - apt-get update && apt-get -y upgrade
+  - apt-get install openjdk-8-jdk git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip python libssl-dev openssl
 script: 
-- git clone https://gitHub.com/crazyuploader/Python.git python
-- cd python && for f in $(ls *.py); do echo "Checking $f"; echo; pyflakes $f; done
-- echo "Done!"
+  - git clone https://github.com/nibaji/kernel_xiaomi_sdm660.git
+  - mkdir toolchain && cd toolchain && git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 
