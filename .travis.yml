@@ -2,6 +2,6 @@ os: linux
 dist: bionic
 language: bash
 before_install:
-  - sudo apt-get update && sudo apt-get install -y curl
+  - sudo apt-get update && sudo apt-get install -y curl hashalot
 script: 
   - which sha256
