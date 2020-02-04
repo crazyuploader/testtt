@@ -4,5 +4,4 @@ language: bash
 before_install:
   - sudo apt-get update && sudo apt-get install -y curl
 script: 
-  - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-  - git clone --depth 1 https://github.com/nibaji/kernel_xiaomi_sdm660.git
+  - which sha256
