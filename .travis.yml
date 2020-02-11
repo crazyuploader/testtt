@@ -4,5 +4,6 @@ language: bash
 before_install:
   - sudo apt-get update && sudo apt autoremove && sudo apt-get install -y python3-pip
   - pip3 install --upgrade pip
+  - pip3 install bs4 requests pandas
 script: 
-  - pip3 --version
+  - pip3 --version && python --version
