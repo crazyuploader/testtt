@@ -8,3 +8,10 @@ install:
 script:
   - pip --version
   - python --version
+  - echo "Player ID"
+  - curl -s https://raw.githubusercontent.com/Dhrumilcse/Web-Scrapper-FIFA.com/master/player-list.py | python -
+  - echo "Done!"
+  - echo "Player Info"
+  - curl -s https://raw.githubusercontent.com/Dhrumilcse/Web-Scrapper-FIFA.com/master/player_info.py | python -
+  - echo "Done!"
+  - cat *.csv
