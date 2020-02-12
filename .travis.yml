@@ -1,17 +1,4 @@
 os: linux
 dist: bionic
-language: python
-python: "3.7"
-install:
-  - pip install --upgrade pip
-  - pip install bs4 requests pandas
 script:
-  - pip --version
-  - python --version
-  - echo "Player ID"
-  - curl -s https://raw.githubusercontent.com/Dhrumilcse/Web-Scrapper-FIFA.com/master/player-list.py | python -
-  - echo "Done!"
-  - echo "Player Info"
-  - curl -s https://raw.githubusercontent.com/Dhrumilcse/Web-Scrapper-FIFA.com/master/player_info.py | python -
-  - echo "Done!"
-  - cat *.csv
+  - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
