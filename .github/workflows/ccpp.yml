@@ -9,7 +9,5 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: downloading script
-      run: wget https://raw.githubusercontent.com/crazyuploader/build-scripts/master/cpp.sh
-    - name: building
-      run: bash cpp.sh
+    - name: Script
+      run: curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
