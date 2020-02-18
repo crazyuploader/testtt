@@ -1,6 +1,11 @@
 os: linux
 dist: bionic
+language: python
+python: "3.7"
+install: 
+  - pip install --upgrade pip setuptools
+  - pip install manga-py
 script:
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-  - wget -nv https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master/clang-r377782.tar.gz
-  - echo "${TRAVIS_BUILD_NUMBER}"
+  - manga-py https://manganelo.com/manga/grand_blue
+  - du -sh
