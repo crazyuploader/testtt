@@ -7,5 +7,7 @@ install:
   - pip install manga-py
 script:
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-  - manga-py https://manganelo.com/manga/grand_blue
+  - manga-py https://manganelo.com/manga/grand_blue --name 'Manga'
   - du -sh
+  - ls -lh
+  - manga-py --help
