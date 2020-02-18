@@ -7,5 +7,5 @@ install:
   - pip install manga-py
 script:
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-  - manga-py --skip-volumes 3 --max-volumes 2 https://manganelo.com/manga/grand_blue --name 'Manga'
+  - manga-py --reverse-downloading --max-volumes 2 https://manganelo.com/manga/grand_blue --name 'Manga'
   - cd Manga && cd Manga && ls
