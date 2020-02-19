@@ -9,4 +9,4 @@ script:
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
   - manga-py --reverse-downloading --max-volumes 10 https://manganelo.com/manga/grand_blue --name 'Manga'
   - cd Manga && cd Manga && ls
-  - for file in *.zip; do echo "Sending ${file}; curl -F chat_id="${KERNEL_CHAT_ID}" -F document=@"$(pwd)/${file}" https://api.telegram.org/bot${BOT_API_TOKEN}/sendDocument; done
+  - for file in *.zip; do echo "Sending ${file}"; curl -F chat_id="${KERNEL_CHAT_ID}" -F document=@"$(pwd)/${file}" https://api.telegram.org/bot${BOT_API_TOKEN}/sendDocument; done
