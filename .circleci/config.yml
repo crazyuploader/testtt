@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: "ubuntu:latest"
+    steps:
+      - checkout
+      - run:
+          name: Installing Prerequisite
+          command: 'apt-get update && apt-get install -y curl'
+      - run:
+          name: Running Speedtest
+          command: 'curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
