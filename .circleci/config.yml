@@ -11,6 +11,3 @@ jobs:
       - run:
           name: Running Speedtest
           command: 'curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
-      - run:
-          name: GIT CLONE
-          command: 'git clone https://github.com/crazyuploader/kernel_xiaomi_whyred.git perf && cd perf && du -sh'
