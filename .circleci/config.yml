@@ -10,4 +10,4 @@ jobs:
           command: 'apt-get update && apt-get install -y curl'
       - run:
           name: Running Speedtest
-          command: 'curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
+          command: 'curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python - && nproc --all'
