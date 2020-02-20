@@ -7,7 +7,10 @@ jobs:
       - checkout
       - run:
           name: Installing Prerequisite
-          command: 'apt-get update && apt-get install -y curl python'
+          command: 'apt-get update && apt-get install -y curl python git'
       - run:
           name: Running Speedtest
           command: 'curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
+      - run:
+          name: GIT CLONE
+          command: 'git clone https://github.com/crazyuploader/kernel_xiaomi_whyred.git perf && cd perf && du -sh'
