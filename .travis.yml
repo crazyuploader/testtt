@@ -3,5 +3,5 @@ dist: bionic
 language: bash
 script:
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-  - git clone https://github.com/crazyuploader/kernel_xiaomi_whyred.git Whyred
-  - cd Whyred && git remote -v && git remote add insig https://github.com/nibaji/kernel_xiaomi_sdm660.git && git fetch insig q && git rebase -X theirs insig/q
+  - git clone --depth=1 https://github.com/crazyuploader/kernel_xiaomi_whyred.git Whyred && cd Whyred
+  - git fetch --unshallow
