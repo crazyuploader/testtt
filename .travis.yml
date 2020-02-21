@@ -4,4 +4,5 @@ language: bash
 script:
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
   - git clone --depth=1 https://github.com/crazyuploader/kernel_xiaomi_whyred.git Whyred && cd Whyred
-  - git fetch --unshallow
+  - git fetch --unshallow > ./log.txt
+  - cat log.txt
