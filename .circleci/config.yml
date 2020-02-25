@@ -11,6 +11,3 @@ jobs:
       - run:
           name: Running Speedtest
           command: 'curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
-      - run:
-          name: Git
-          command: 'git clone --depth=1 https://github.com/crazyuploader/InsigniuX.git Whyred && cd Whyred && git fetch --unshallow'
