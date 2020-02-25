@@ -3,4 +3,4 @@ dist: bionic
 language: bash
 script:
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-  - apt-get update && apt-get -y upgrade
+  - sudo apt-get update && sudo apt-get -y upgrade
