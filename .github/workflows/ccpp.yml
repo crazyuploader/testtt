@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Script
-      run: curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+      run: bash script.sh
