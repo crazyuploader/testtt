@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone --depth=1 https://github.com/crazyuploader/Xiaomeme.git -b TEST Meme && cd Meme
+git clone --depth=1 https://github.com/crazyuploader/Xiaomeme.git -b whyred Meme && cd Meme
 
 PWD="$(pwd)"
 NAME="$(basename "${PWD}")"
