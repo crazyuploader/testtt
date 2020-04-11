@@ -1,0 +1,14 @@
+version: v1.0
+name: Script
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Try
+    task:
+      jobs:
+        - name: Try
+          commands:
+            - checkout
+            - bash script.sh
