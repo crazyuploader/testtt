@@ -7,4 +7,5 @@ jobs:
       - checkout
       - run:
           name: Running Script
-          command: 'bash script.sh'
+          command: |
+            bash script.sh
