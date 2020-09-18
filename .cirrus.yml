@@ -1,0 +1,5 @@
+container:
+  image: python:latest
+
+run_script:
+  script: bash script.sh
