@@ -1,5 +1,5 @@
 container:
-  image: ubuntu:latest
+  image: python:latest
 
 check_task:
   test_script: bash script.sh
