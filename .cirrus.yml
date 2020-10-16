@@ -2,4 +2,4 @@ container:
   image: crazyuploader/minimal_ubuntu:latest
 
 check_task:
-  test_script: echo "Hey"
+  test_script: bash script.sh
