@@ -1,5 +1,5 @@
 container:
-  image: crazyuploader/minimal_ubuntu:latest
+  image: crazyuploader/python_build_tools:latest
 
 check_task:
   test_script: bash script.sh
