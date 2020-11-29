@@ -5,4 +5,5 @@ pool:
 
 steps:
 - script: |
-    bash script.sh
+    curl -O https://raw.githubusercontent.com/crazyuploader/Docker-Builder/master/speedtest/Dockerfile
+    docker build -t crazyuploader/speedtest .
