@@ -1,8 +1,0 @@
-kind: pipeline
-name: Testtt
-
-steps:
-- name: linux
-  image: crazyuploader/minimal_ubuntu
-  commands:
-  - bash script.sh
