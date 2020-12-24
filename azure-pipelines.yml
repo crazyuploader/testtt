@@ -1,7 +1,7 @@
 pool:
   vmImage: 'ubuntu-latest'
 
-container: crazyuploader/speedtest
+container: crazyuploader/speedtest:latest
 
 steps:
 - script: |
