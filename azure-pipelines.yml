@@ -1,7 +1,8 @@
 pool:
   vmImage: 'ubuntu-latest'
 
+container: crazyuploader/speedtest
+
 steps:
 - script: |
-    docker pull crazyuploader/speedtest
-    docker run crazyuploader/speedtest "speedtest --server-id 24479"
+    speedtest --server-id 24479
