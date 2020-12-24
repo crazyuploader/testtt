@@ -1,8 +1,8 @@
 pool:
   vmImage: 'ubuntu-latest'
 
-container: crazyuploader/speedtest:latest
-
 steps:
 - script: |
-    speedtest --server-id 24479
+    curl -LO https://github.com/crazyuploader/SpeedTest_Official_CLI/raw/main/linux/speedtest
+    chmod +x speedtest
+    ./speedtest --server-id 24479
