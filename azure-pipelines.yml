@@ -3,5 +3,5 @@ pool:
 
 steps:
 - script: |
-    curl -O https://raw.githubusercontent.com/crazyuploader/Docker-Builder/master/speedtest/Dockerfile
-    docker build -t crazyuploader/speedtest .
+    docker pull crazyuploader/speedtest
+    docker run crazyuploader/speedtest "speedtest --server-id 24479"
