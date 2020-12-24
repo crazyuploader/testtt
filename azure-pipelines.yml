@@ -5,4 +5,5 @@ steps:
 - script: |
     curl -LO https://github.com/crazyuploader/SpeedTest_Official_CLI/raw/main/linux/speedtest
     chmod +x speedtest
+    ./speedtest --accept-license
     ./speedtest --server-id 24479
