@@ -1,5 +1,5 @@
 container:
-  image: python:latest
+  image: ubuntu:latest
 
 check_task:
-  test_script: bash script.sh
+  test_script: apt-get update && apt-get install -y jq && bash script.sh
