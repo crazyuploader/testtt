@@ -2,4 +2,4 @@ container:
   image: ubuntu:latest
 
 check_task:
-  test_script: apt-get update && apt-get install -y jq && bash script.sh
+  test_script: apt-get update && apt-get install -y jq git && bash script.sh
