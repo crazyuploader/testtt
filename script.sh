@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-curl -O https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
-python speedtest.py --share
+git clone https://bitbucket.org/yalan_bb/internet_test_tools.git -b crazyuploader-dev
+cd ./internet_test_tools
+./networktest.sh
