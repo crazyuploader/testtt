@@ -1,5 +1,2 @@
-container:
-  image: ubuntu:latest
-
-check_task:
-  test_script: apt-get update && apt-get install -y jq git && bash script.sh
+docker_builder:
+  build_script: bash script.sh
