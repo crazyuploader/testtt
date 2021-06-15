@@ -1,7 +1,7 @@
 container:
   image: ubuntu:latest
   cpu: 16
-  memory: 32G
+  memory: 16G
 
 check_task:
   test_script: |
