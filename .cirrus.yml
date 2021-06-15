@@ -1,6 +1,6 @@
 container:
   image: baalajimaestro/android_build
-  cpu: 8
+  cpu: 12
   memory: 32G
   timeout_in: 120m
 
