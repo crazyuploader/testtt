@@ -7,7 +7,11 @@ container:
 check_task:
   test_script: |
     df -h
+    mkdir -p ~/bin
     mkdir -p ~/android/lineage
+    curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+    chmod a+x ~/bin/repo
+    PATH="$HOME/bin:$PATH"
     git config --global user.email "you@example.com"
     git config --global user.name "Your Name"
     cd ~/android/lineage
