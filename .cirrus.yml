@@ -1,8 +1,11 @@
 container:
   image: ubuntu:latest
+  cpu: 16
+  memory: 32G
 
 check_task:
   test_script: |
+    export DEBIAN_FRONTEND=noninteractive
     apt-get update
     apt-get install -y git curl sudo
     git clone https://github.com/akhilnarang/scripts ~/scripts
