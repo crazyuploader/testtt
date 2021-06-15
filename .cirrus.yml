@@ -1,7 +1,8 @@
 container:
   image: ubuntu:latest
-  cpu: 16
+  cpu: 8
   memory: 16G
+  timeout_in: 120m
 
 check_task:
   test_script: |
