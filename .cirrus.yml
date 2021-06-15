@@ -9,5 +9,4 @@ check_task:
     apt-get update
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
     apt-get install -y git curl sudo
-    git clone https://github.com/akhilnarang/scripts ~/scripts
-    cd ~/scripts; bash setup/android_build_env.sh
+    curl -sL yabs.sh | bash -
