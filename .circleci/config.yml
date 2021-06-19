@@ -2,10 +2,10 @@ version: 2
 jobs:
   build:
     docker:
-      - image: "python:latest"
+      - image: "crazyuploader/speedtest:latest"
     steps:
       - checkout
       - run:
           name: Running Script
           command: |
-            bash script.sh
+            speedtest

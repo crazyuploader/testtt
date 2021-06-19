@@ -1,5 +1,5 @@
 container:
-  image: python:latest
+  image: crazyuploader/speedtest:latest
 
 check_task:
-  test_script: bash script.sh
+  test_script: speedtest
