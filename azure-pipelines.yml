@@ -1,6 +1,6 @@
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 steps:
-- script: |
-    bash script.sh
+  - script: |
+      bash script.sh

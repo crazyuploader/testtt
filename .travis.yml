@@ -1,5 +1,0 @@
-os: linux
-dist: bionic
-language: bash
-script:
-  - bash script.sh
