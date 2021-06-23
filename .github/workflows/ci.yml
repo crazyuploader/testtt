@@ -1,6 +1,6 @@
-name: CI
+name: PI
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   build:
@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Script
-        run: bash script.sh
+        run: echo "Hello"
