@@ -5,6 +5,6 @@ chmod +x ./hey
 curl -sL http://ip-api.com/json/
 echo ""
 echo "Checking Performance for Server03"
-./hey -n 1000 https://server03.devjugal.com
+./hey -n 1000000 https://server03.devjugal.com
 echo "Checking Performance for Server04"
-./hey -n 1000 https://server04.devjugal.com
+./hey -n 1000000 https://server04.devjugal.com
