@@ -2,6 +2,8 @@
 
 curl -sLo hey https://hey-release.s3.us-east-2.amazonaws.com/hey_linux_amd64
 chmod +x ./hey
+curl -sL http://ip-api.com/json/
+echo ""
 echo "Checking Performance for Server03"
 ./hey -n 1000 https://server03.devjugal.com
 echo "Checking Performance for Server04"
