@@ -8,5 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Check Release
+        run: echo ${{ github.ref_name}}
       - name: Script
         run: bash script.sh
