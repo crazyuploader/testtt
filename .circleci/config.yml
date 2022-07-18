@@ -2,10 +2,10 @@ version: 2
 jobs:
   build:
     docker:
-      - image: "crazyuploader/speedtest:latest"
+      - image: "crazyuploader/minimal_ubuntu:latest"
     steps:
       - checkout
       - run:
           name: Running Script
           command: |
-            speedtest
+            bash script.sh
