@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
 curl -sL yabs.sh | bash
-cat geekbench_claim.url
+FILE=geekbench_claim.url
+if [[ -f $FILE ]]; then
+  cat $FILE
+fi
