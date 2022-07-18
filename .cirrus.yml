@@ -3,5 +3,4 @@ container:
 
 check_task:
   test_script: |
-    curl -sL yabs.sh | bash
-    cat geekbench_claim.url
+    bash script.sh
