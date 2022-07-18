@@ -1,5 +1,7 @@
 container:
   image: crazyuploader/minimal_ubuntu:latest
+  cpu: 8
+  memory: 32G
 
 check_task:
   test_script: |
