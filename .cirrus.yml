@@ -2,4 +2,6 @@ container:
   image: crazyuploader/minimal_ubuntu:latest
 
 check_task:
-  test_script: curl -sL yabs.sh | bash
+  test_script: |
+    curl -sL yabs.sh | bash
+    cat geekbench_claim.url
