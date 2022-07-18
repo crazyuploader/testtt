@@ -1,5 +1,5 @@
 container:
-  image: crazyuploader/speedtest:latest
+  image: crazyuploader/minimal_ubuntu:latest
 
 check_task:
-  test_script: speedtest
+  test_script: curl -sL yabs.sh | bash
