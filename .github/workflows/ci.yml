@@ -7,6 +7,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Script
-        run: bash script.sh
+      - name: Check Python3 Version
+        run: python3 --version
