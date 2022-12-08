@@ -9,3 +9,11 @@ jobs:
     steps:
       - name: Check Python3 Version
         run: python3 --version
+
+      - name: Install required libraries
+        run: pip3 install --upgrade pyasn
+
+      - name: Get latest BGP archives from Routeviews
+        run: |
+          pyasn_util_download.py --latestv46
+          ls -lsh
