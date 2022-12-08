@@ -17,7 +17,9 @@ jobs:
       - name: Get latest BGP archives from Routeviews
         run: |
           wget https://raw.githubusercontent.com/hadiasghari/pyasn/master/pyasn-utils/pyasn_util_download.py
-          python3 pyasn_util_download.py --latestv46 --filename bgp_archive.dat
+          wget https://raw.githubusercontent.com/hadiasghari/pyasn/master/pyasn-utils/pyasn_util_convert.py
+          python3 pyasn_util_download.py --latestv46 --filename bgp_archive.bz2
+          python3 pyasn_util_convert.py --single bgp_archive.bz2 bgp_archive.dat
           ls -lsh
 
       - name: Run get_as_prefixes.py
